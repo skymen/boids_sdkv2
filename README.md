@@ -1,4 +1,4 @@
-<img src="./src/icon.svg width="100" /><br>
+<img src="./src/icon.svg" width="100" /><br>
 # Boids
 <i>Simulated flocking movement based on Craig Reynolds' boids model - http://www.red3d.com/cwr/boids/</i> <br>
 ### Version 2.0.0.5

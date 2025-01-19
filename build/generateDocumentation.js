@@ -42,10 +42,10 @@ function getCoverImage() {
   for (let i = 0; i < images.length; i++) {
     const imageName = images[i].split(".")[0];
     if (imageName === "cover") {
-      return `<img src="./examples/${images[i]} width="150" /><br>`;
+      return `<img src="./examples/${images[i]}" width="150" /><br>`;
     }
   }
-  return `<img src="./src/icon.svg width="100" /><br>`;
+  return `<img src="./src/icon.svg" width="100" /><br>`;
 }
 
 async function getGithubURL() {
@@ -159,11 +159,7 @@ export default async function generateDocumentation() {
         //check if image contains the name of the example file
         if (imageName.includes(fileName)) {
           // display the a small version of the image on a new line
-          readme.push(
-            `<img src="./examples/${image}?rand=${Math.floor(
-              Math.random() * 10000
-            )}" width="200" /> <br>`
-          );
+          readme.push(`<img src="./examples/${image}" width="200" /> <br>`);
         }
       });
       readme.push(
