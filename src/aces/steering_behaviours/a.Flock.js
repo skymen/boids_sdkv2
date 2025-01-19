@@ -6,7 +6,7 @@ export const config = {
   isAsync: false,
   listName: "Flock",
   displayText:
-    "{my}: Flock with {2} to the position ([i]{0}[/i],[i]{1}[/i]) {3} {4} {5} {6} {7} {8}",
+    "{my}: Flock with {2} to the position ([i]{0}[/i],[i]{1}[/i]) with params [i]({3}, {4}, {5}, {6}, {7}, {8})[/i]",
   description: "Flock behavior",
   params: [
     {
