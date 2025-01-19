@@ -62,9 +62,9 @@
                 "name": "Seperation distance",
                 "desc": "The seperation distance value"
               },
-              "max_flockmates8": {
-                "name": "Max flockmates",
-                "desc": "The max flockmates value"
+              "distance_cutoff8": {
+                "name": "Distance cut-off",
+                "desc": "The distance cut-off value"
               }
             }
           },

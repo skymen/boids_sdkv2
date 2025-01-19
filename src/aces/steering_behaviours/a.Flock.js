@@ -6,6 +6,7 @@ export const config = {
   isAsync: false,
   listName: "Flock",
   displayText:
+    // "{my}: Flock with {2} to the position ([i]{0}[/i],[i]{1}[/i]) with params [i]({3}, {4}, {5}, {6}, {7}, {8}, {9})[/i]",
     "{my}: Flock with {2} to the position ([i]{0}[/i],[i]{1}[/i]) with params [i]({3}, {4}, {5}, {6}, {7}, {8})[/i]",
   description: "Flock behavior",
   params: [
@@ -66,12 +67,19 @@ export const config = {
       initialValue: "",
     },
     {
-      id: "max_flockmates8",
+      id: "distance_cutoff8",
       type: "number",
-      name: "Max flockmates",
-      desc: "The max flockmates value",
-      initialValue: "5",
+      name: "Distance cut-off",
+      desc: "The distance cut-off value",
+      initialValue: "150",
     },
+    // {
+    //   id: "max_mates9",
+    //   type: "number",
+    //   name: "Max mates",
+    //   desc: "The max number of mates",
+    //   initialValue: "5",
+    // },
   ],
 };
 
@@ -86,7 +94,8 @@ export default function (
   alignmentPriority,
   cohesionPriority,
   separationDistance,
-  maxFlockmates
+  distanceCutoff
+  // maxMates
 ) {
   var deltax = targetX - this.instance.x;
   var deltay = targetY - this.instance.y;
@@ -101,22 +110,25 @@ export default function (
   var desiredVelocityY = normaly * this.maxSpeed * targetPriority;
 
   // Get all flockmates
-  var flockers = flockTargetType.getAllInstances();
-
-  // NEW: Sort by distance to prioritize nearest agents
-  flockers.sort((a, b) => {
-    let dx1 = this.instance.x - a.x;
-    let dy1 = this.instance.y - a.y;
-    let dist1 = dx1 * dx1 + dy1 * dy1; // Squared distance (faster)
-
-    let dx2 = this.instance.x - b.x;
-    let dy2 = this.instance.y - b.y;
-    let dist2 = dx2 * dx2 + dy2 * dy2;
-
-    return dist1 - dist2;
+  var flockers = flockTargetType.getPickedInstances().filter((a) => {
+    if (a === this.instance) return false; // Skip itself
+    var dx = this.instance.x - a.x;
+    var dy = this.instance.y - a.y;
+    var distanceSquared = dx * dx + dy * dy; // Squared distance (faster)
+    return distanceSquared < distanceCutoff * distanceCutoff; // Only consider closest agents
   });
+  // .sort((a, b) => {
+  //   var dx = this.instance.x - a.x;
+  //   var dy = this.instance.y - a.y;
+  //   var distanceSquaredA = dx * dx + dy * dy;
+  //   dx = this.instance.x - b.x;
+  //   dy = this.instance.y - b.y;
+  //   var distanceSquaredB = dx * dx + dy * dy;
+  //   return distanceSquaredA - distanceSquaredB;
+  // })
+  // .slice(0, maxMates); // Limit to max mates
 
-  var count = Math.min(flockers.length, maxFlockmates); // Only consider closest agents
+  var count = flockers.length; // Only consider closest agents
 
   for (var i = 0; i < count; i++) {
     var a = flockers[i];

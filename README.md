@@ -1,9 +1,9 @@
-<img src="./src/icon.svg?rand=6912" width="100" /><br>
+<img src="./src/icon.svg?rand=2319" width="100" /><br>
 # Boids
 <i>Simulated flocking movement based on Craig Reynolds' boids model - http://www.red3d.com/cwr/boids/</i> <br>
-### Version 2.0.0.4
+### Version 2.0.0.5
 
-[<img src="https://placehold.co/200x50/4493f8/FFF?text=Download&font=montserrat" width="200"/>](https://github.com/skymen/boids_sdkv2/releases/download/skymenBoids-2.0.0.4.c3addon/skymenBoids-2.0.0.4.c3addon)
+[<img src="https://placehold.co/200x50/4493f8/FFF?text=Download&font=montserrat" width="200"/>](https://github.com/skymen/boids_sdkv2/releases/download/skymenBoids-2.0.0.5.c3addon/skymenBoids-2.0.0.5.c3addon)
 <br>
 <sub> [See all releases](https://github.com/skymen/boids_sdkv2/releases) </sub> <br>
 
@@ -50,7 +50,7 @@ npm run dev
 ## Actions
 | Action | Description | Params
 | --- | --- | --- |
-| Flock | Flock behavior | Target X             *(number)* <br>Target Y             *(number)* <br>Flock with             *(object)* <br>Target priority             *(number)* <br>Seperation priority             *(number)* <br>Alignment priority             *(number)* <br>Cohesion priority             *(number)* <br>Seperation distance             *(number)* <br>Max flockmates             *(number)* <br> |
+| Flock | Flock behavior | Target X             *(number)* <br>Target Y             *(number)* <br>Flock with             *(object)* <br>Target priority             *(number)* <br>Seperation priority             *(number)* <br>Alignment priority             *(number)* <br>Cohesion priority             *(number)* <br>Seperation distance             *(number)* <br>Distance cut-off             *(number)* <br> |
 | Set angle | Set the angle | Set Angle             *(boolean)* <br> |
 | Set max force | Set the max force value | Max force             *(number)* <br> |
 | Set max speed | Set the max speed value | Max speed             *(number)* <br> |
