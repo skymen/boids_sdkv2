@@ -167,7 +167,7 @@ export default async function generateDocumentation() {
         }
       });
       readme.push(
-        `- [${fileName}](${githubUrl}/raw/refs/heads/main/${file.replace(
+        `- [${fileName}](${githubUrl}/raw/refs/heads/main/examples/${file.replace(
           / /g,
           "%20"
         )})`

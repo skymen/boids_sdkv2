@@ -36,7 +36,7 @@ npm run dev
 ```
 
 ## Examples Files
-- [Basic Implementation](https://github.com/skymen/boids_sdkv2/raw/refs/heads/main/Basic%20Implementation.c3p)
+- [Basic Implementation](https://github.com/skymen/boids_sdkv2/raw/refs/heads/main/examples/Basic%20Implementation.c3p)
 </br>
 
 ---
