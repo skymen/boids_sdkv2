@@ -84,7 +84,7 @@ export default function (
   alignmentPriority,
   cohesionPriority,
   separationDistance,
-  maxFlockmates = 5
+  maxFlockmates
 ) {
   var deltax = targetX - this.inst.x;
   var deltay = targetY - this.inst.y;
