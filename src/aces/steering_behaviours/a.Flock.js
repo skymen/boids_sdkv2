@@ -1,10 +1,11 @@
 export const config = {
-  highlight: false,
+  highlight: true,
   deprecated: false,
   isAsync: false,
-  listName: "Sample Action",
-  displayText: "Sample Action {0}",
-  description: "This is a sample action",
+  listName: "Flock",
+  displayText:
+    "{my}: Flock with {2} to the position ([i]{0}[/i],[i]{1}[/i]) {3} {4} {5} {6} {7} {8}",
+  description: "Flock behavior",
   params: [
     {
       id: "target_x0",
@@ -26,7 +27,6 @@ export const config = {
       name: "Flock with",
       desc: "The object type to flock with",
       allowedPluginIds: ["<world>"],
-      initialValue: "",
     },
     {
       id: "target_priority3",
