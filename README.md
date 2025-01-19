@@ -36,9 +36,9 @@ npm run dev
 ```
 
 ## Examples Files
-</br>
-- [Basic Implementation](https://github.com/skymen/boids_sdkv2/raw/refs/heads/main/examples/Basic%20Implementation.c3p)
-</br>
+| Description | Download |
+| --- | --- |
+| Basic Implementation | [<img src="https://placehold.co/120x30/4493f8/FFF?text=Download&font=montserrat" width="120"/>](https://github.com/skymen/boids_sdkv2/raw/refs/heads/main/examples/Basic%20Implementation.c3p) |
 
 ---
 ## Properties
