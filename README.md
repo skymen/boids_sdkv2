@@ -1,4 +1,4 @@
-<img src="./src/icon.svg" width="100" /><br>
+<img src="./examples/cover.png" width="150" /><br>
 # Boids
 <i>Simulated flocking movement based on Craig Reynolds' boids model - http://www.red3d.com/cwr/boids/</i> <br>
 ### Version 2.0.0.5
@@ -36,6 +36,7 @@ npm run dev
 ```
 
 ## Examples Files
+</br>
 - [Basic Implementation](https://github.com/skymen/boids_sdkv2/raw/refs/heads/main/examples/Basic%20Implementation.c3p)
 </br>
 
