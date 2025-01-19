@@ -5,15 +5,16 @@ import {
   PROPERTY_TYPE,
 } from "./template/enums.js";
 import _version from "./version.js";
-export const addonType = ADDON_TYPE.PLUGIN;
+export const addonType = ADDON_TYPE.BEHAVIOR;
 export const type = PLUGIN_TYPE.OBJECT;
-export const id = "sample_addon";
-export const name = "Sample Addon";
+export const id = "skymenBoids";
+export const name = "Boids";
 export const version = _version;
-export const author = "skymen";
+export const author = "Alastair Aitchison & skymen";
 export const website = "https://www.construct.net";
 export const documentation = "https://www.construct.net";
-export const description = "Description";
+export const description =
+  "Simulated flocking movement based on Craig Reynolds' boids model - http://www.red3d.com/cwr/boids/";
 export const category = ADDON_CATEGORY.GENERAL;
 
 export const hasDomside = false;
@@ -23,7 +24,9 @@ export const files = {
 };
 
 // categories that are not filled will use the folder name
-export const aceCategories = {};
+export const aceCategories = {
+  steering_behaviours: "Steering",
+};
 
 export const info = {
   // icon: "icon.svg",
@@ -36,7 +39,7 @@ export const info = {
     GooglePlayServicesEnabled: false,
 
     // BEHAVIOR only
-    IsOnlyOneAllowed: false,
+    IsOnlyOneAllowed: true,
 
     // PLUGIN world only
     IsResizable: false,
@@ -50,7 +53,7 @@ export const info = {
     MustPreDraw: false,
 
     // PLUGIN object only
-    IsSingleGlobal: true,
+    IsSingleGlobal: false,
   },
   // PLUGIN only
   AddCommonACEs: {
@@ -100,4 +103,31 @@ export const properties = [
     desc: "Property Description",
   }
   */
+  {
+    type: PROPERTY_TYPE.INTEGER,
+    id: "maxspeed",
+    options: {
+      initialValue: 500,
+    },
+    name: "Max speed",
+    desc: "The max speed value",
+  },
+  {
+    type: PROPERTY_TYPE.INTEGER,
+    id: "maxforce",
+    options: {
+      initialValue: 500,
+    },
+    name: "Max force",
+    desc: "The max force value",
+  },
+  {
+    type: PROPERTY_TYPE.CHECK,
+    id: "set-angle",
+    options: {
+      initialValue: true,
+    },
+    name: "Set angle",
+    desc: "The angle behavior",
+  },
 ];
