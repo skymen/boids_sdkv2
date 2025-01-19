@@ -6,7 +6,7 @@
       "skymenboids": {
         "name": "Boids",
         "description": "Simulated flocking movement based on Craig Reynolds' boids model - http://www.red3d.com/cwr/boids/",
-        "help-url": "https://www.construct.net",
+        "help-url": "https://www.construct.net/en/make-games/addons/530/boids/documentation",
         "aceCategories": {
           "steering_behaviours": "Steering"
         },

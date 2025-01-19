@@ -1,4 +1,4 @@
-<img src="./src/icon.svg?rand=5939" width="100" /><br>
+<img src="./src/icon.svg?rand=1021" width="100" /><br>
 # Boids
 <i>Simulated flocking movement based on Craig Reynolds' boids model - http://www.red3d.com/cwr/boids/</i> <br>
 ### Version 2.0.0.1
@@ -9,6 +9,7 @@
 
 ---
 <b><u>Author:</u></b> Alastair Aitchison & skymen <br>
+<b>[Documentation](https://www.construct.net/en/make-games/addons/530/boids/documentation)</b>  <br>
 <sub>Made using [CAW](https://marketplace.visualstudio.com/items?itemName=skymen.caw) </sub><br>
 
 ## Table of Contents

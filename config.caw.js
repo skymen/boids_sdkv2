@@ -11,8 +11,9 @@ export const id = "skymenBoids";
 export const name = "Boids";
 export const version = _version;
 export const author = "Alastair Aitchison & skymen";
-export const website = "https://www.construct.net";
-export const documentation = "https://www.construct.net";
+export const website = "https://github.com/skymen/boids_sdkv2";
+export const documentation =
+  "https://www.construct.net/en/make-games/addons/530/boids/documentation";
 export const description =
   "Simulated flocking movement based on Craig Reynolds' boids model - http://www.red3d.com/cwr/boids/";
 export const category = ADDON_CATEGORY.GENERAL;
