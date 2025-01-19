@@ -88,8 +88,8 @@ export default function (
   separationDistance,
   maxFlockmates
 ) {
-  var deltax = targetX - this.inst.x;
-  var deltay = targetY - this.inst.y;
+  var deltax = targetX - this.instance.x;
+  var deltay = targetY - this.instance.y;
 
   // Normalize
   var length = Math.sqrt(deltax * deltax + deltay * deltay);
@@ -105,12 +105,12 @@ export default function (
 
   // NEW: Sort by distance to prioritize nearest agents
   flockers.sort((a, b) => {
-    let dx1 = this.inst.x - a.x;
-    let dy1 = this.inst.y - a.y;
+    let dx1 = this.instance.x - a.x;
+    let dy1 = this.instance.y - a.y;
     let dist1 = dx1 * dx1 + dy1 * dy1; // Squared distance (faster)
 
-    let dx2 = this.inst.x - b.x;
-    let dy2 = this.inst.y - b.y;
+    let dx2 = this.instance.x - b.x;
+    let dy2 = this.instance.y - b.y;
     let dist2 = dx2 * dx2 + dy2 * dy2;
 
     return dist1 - dist2;
@@ -120,10 +120,10 @@ export default function (
 
   for (var i = 0; i < count; i++) {
     var a = flockers[i];
-    if (a === this.inst) continue; // Skip itself
+    if (a === this.instance) continue; // Skip itself
 
-    var dx = this.inst.x - a.x;
-    var dy = this.inst.y - a.y;
+    var dx = this.instance.x - a.x;
+    var dy = this.instance.y - a.y;
     var distanceSquared = dx * dx + dy * dy; // Squared distance (avoid sqrt for speed)
 
     if (distanceSquared > separationDistance * separationDistance * 4) continue; // Ignore distant agents

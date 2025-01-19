@@ -89,8 +89,8 @@ export default function (parentClass) {
     }
 
     _tick() {
-      const dt = this.inst.dt;
-      const wi = this.inst;
+      const dt = this.instance.dt;
+      const wi = this.instance;
       // Calculate magnitude of steering force
       var force = Math.sqrt(this.sx * this.sx + this.sy * this.sy);
 
