@@ -1,4 +1,6 @@
 export const config = {
+  id: "flock1",
+  c2id: 1,
   highlight: true,
   deprecated: false,
   isAsync: false,

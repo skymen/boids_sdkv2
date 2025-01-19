@@ -1,9 +1,9 @@
-<img src="./src/icon.svg?rand=1021" width="100" /><br>
+<img src="./src/icon.svg?rand=2787" width="100" /><br>
 # Boids
 <i>Simulated flocking movement based on Craig Reynolds' boids model - http://www.red3d.com/cwr/boids/</i> <br>
-### Version 2.0.0.1
+### Version 2.0.0.2
 
-[<img src="https://placehold.co/200x50/4493f8/FFF?text=Download&font=montserrat" width="200"/>](https://github.com/skymen/boids_sdkv2/releases/download/skymenBoids-2.0.0.1.c3addon/skymenBoids-2.0.0.1.c3addon)
+[<img src="https://placehold.co/200x50/4493f8/FFF?text=Download&font=montserrat" width="200"/>](https://github.com/skymen/boids_sdkv2/releases/download/skymenBoids-2.0.0.2.c3addon/skymenBoids-2.0.0.2.c3addon)
 <br>
 <sub> [See all releases](https://github.com/skymen/boids_sdkv2/releases) </sub> <br>
 
