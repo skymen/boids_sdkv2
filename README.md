@@ -9,6 +9,7 @@
 
 ---
 <b><u>Author:</u></b> Alastair Aitchison & skymen <br>
+<b>[Construct Addon Page](https://www.construct.net/en/make-games/addons/530/boids)</b>  <br>
 <b>[Documentation](https://www.construct.net/en/make-games/addons/530/boids/documentation)</b>  <br>
 <sub>Made using [CAW](https://marketplace.visualstudio.com/items?itemName=skymen.caw) </sub><br>
 
